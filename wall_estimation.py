@@ -12,14 +12,6 @@ xs = np.loadtxt('hallway1b.asc')
 # Since RANSAC only works reliable if
 # the majority of the points being consider belong to the plane.
 # We remove points too far away from the table.
-# xs = xs[xs[:, 2] < 2.1]
-# xs = xs[xs[:, 2] > 0.5]
-
-# xs = xs[xs[:, 0] < 0.5]
-# xs = xs[xs[:, 0] > -0.5]
-
-# xs = xs[xs[:, 1] < 0.25]
-
 print('Number of point after filtering', xs.shape[0])
 
 num_points_for_plane_estimation = 3
